@@ -210,3 +210,57 @@ nav li b {
 
 
 /* board end */
+
+
+/* boardView start */
+
+#boardView {
+    width: 80vw;
+    height: 100vh;
+}
+
+#boardView-body {
+    width: 70vw;
+    height: 90vh;
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    margin: 10px auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#boardView-Title-user {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boardView-main {
+    position: relative;
+    height: 90%;
+}
+
+#boardView-main-vote {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 5px;
+}
+
+
+/* #boardView-main-votebox {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #ededed;
+} */
+
+#boardView-main-vote-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #ededed;
+    font-size: 16px;
+    margin-left: 30px;
+}
