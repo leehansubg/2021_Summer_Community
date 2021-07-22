@@ -221,13 +221,15 @@ nav li b {
 
 #boardView-body {
     width: 70vw;
-    height: 90vh;
+    height: 110vh;
     box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     margin: 10px auto;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 #boardView-Title-user {
@@ -236,25 +238,14 @@ nav li b {
 }
 
 #boardView-main {
-    position: relative;
-    height: 90%;
+    height: 200px;
 }
 
 #boardView-main-vote {
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
-    bottom: 5px;
 }
-
-
-/* #boardView-main-votebox {
-    width: 100px;
-    height: 100px;
-    border-radius: 25px;
-    background-color: #ededed;
-} */
 
 #boardView-main-vote-btn {
     width: 100px;
@@ -262,5 +253,62 @@ nav li b {
     border-radius: 25px;
     background-color: #ededed;
     font-size: 16px;
+}
+
+#boardView-main-vote-btn:nth-child(2) {
     margin-left: 30px;
+}
+
+#boardView-comment-title {
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+}
+
+#bv-comment-list {
+    width: 70px;
+}
+
+#boaradView-comment-main {
+    margin-top: 5px;
+    border-top: 1px solid #000;
+}
+
+#boaradView-comment-main li {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#boaradView-comment-main li button {
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#boardView-comment {
+    height: 100px;
+}
+
+#boardView-comment-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#boardView-comment-text {
+    width: 95%;
+    height: 177px;
+    border-radius: 25px;
+    resize: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+#boardView-comment-submit {
+    width: 90px;
+    height: 40px;
+    border-radius: 15px;
 }
